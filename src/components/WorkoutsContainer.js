@@ -23,7 +23,7 @@ class WorkoutsContainer extends Component {
             .catch(error => console.log(error))
     }
 
-    addNewIdea = () => {
+    addNewWorkout = () => {
         axios.post(
             'http://localhost:3001/api/v1/workouts',
             { workout:
@@ -51,7 +51,7 @@ class WorkoutsContainer extends Component {
     render() {
         return (
             <div>
-                <button className="newIdeaButton" onClick={this.addNewIdea} >
+                <button className="newIdeaButton" onClick={this.addNewWorkout} >
                     New Idea
                 </button>
                 <div>
