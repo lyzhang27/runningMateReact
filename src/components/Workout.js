@@ -5,6 +5,7 @@ const Workout = ({workout}) =>
         <p>{workout.activity}</p>
         <p>{workout.distance}</p>
         <p>{workout.duration}</p>
+        <p>{workout.complete}</p>
     </div>
 
 export default Workout
