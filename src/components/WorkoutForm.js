@@ -16,16 +16,17 @@ class WorkoutForm extends Component {
         return (
             <div className="tile">
                 <form onBlur={this.handleBlur}>
-                    <input className='input' type="date"
-                           name="date" value={this.state.date} onChange={this.handleInput}/>
-                    <input className='input' type="text"
-                           name="activity" placeholder='What is the activity'
-                              value={this.state.activity} onChange={this.handleInput}></input>
-                    <input className='input' type="number"
-                           name="distance" placeholder='What is the distance'
+                    <label>Date: </label>
+                    <input className='input' type="date" name="date" value={this.state.date}
+                           onChange={this.handleInput} ref={this.props.titleRef}></input>
+                    <label>Input: </label>
+                    <input className='input' type="text" name="activity" placeholder='What is the activity'
+                           value={this.state.activity} onChange={this.handleInput}></input>
+                    <label>Distance(mi): </label>
+                    <input className='input' type="number" name="distance" placeholder='What is the distance'
                            value={this.state.distance} onChange={this.handleInput}></input>
-                    <input className='input' type="number"
-                           name="duration" placeholder='What is the duration'
+                    <label>Duration(min): </label>
+                    <input className='input' type="number" name="duration" placeholder='What is the duration'
                            value={this.state.duration} onChange={this.handleInput}></input>
                 </form>
             </div>

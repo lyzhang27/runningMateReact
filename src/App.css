@@ -18,37 +18,63 @@
 /*}*/
 
 .tile {
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 170px;
   margin: 10px;
-  background: lightyellow;
+  padding-left: 15px;
+  background: #82d8ff;
   float: left;
   font-size: 11px;
   text-align: left;
 }
 
-.newIdeaButton {
+.newWorkoutButton {
   background: darkblue;
   color: white;
   border: none;
   font-size: 18px;
   cursor: pointer;
-  margin-right: 10px;
-  margin-left: 10px;
-  padding:10px;
+  margin: 10px;
+  padding: 10px;
+  display: block;
 }
 
 .input {
-  border: 0;
-  background: none;
-  outline: none;
-  margin-top:10px;
-  width: 140px;
-  font-size: 11px;
+  margin-left: 10px;
+  height: 16px;
+  width: 100px;
+  border: 1px solid #000;
+  float: left;
 }
 
 .input:focus {
   border: solid 1px lightgrey;
+}
+
+.deleteButton {
+  visibility: hidden;
+  float: right;
+  margin: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  color: red;
+}
+
+.tile:hover .deleteButton {
+  visibility: visible;
+}
+
+label{
+  font-size: 14px;
+  color: #333;
+  height: 20px;
+  width: 100px;
+  margin-top: 5px;
+  margin-left: 10px;
+  text-align: left;
+  clear: both;
+  float:left;
+  margin-right:15px;
 }
 
 textarea {
